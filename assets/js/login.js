@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-03 16:29:23
- * @LastEditTime: 2021-01-05 14:01:54
+ * @LastEditTime: 2021-01-05 14:56:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \bigevent\assets\js\login.js
@@ -92,7 +92,7 @@ $('#regisform').on('submit',function(e){
                 layer.msg('注册成功', function(){
                 //do something
                     location.href='/home/index.html'
-                });  
+                });
             }
         })
     })
