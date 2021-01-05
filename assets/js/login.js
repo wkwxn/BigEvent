@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-03 16:29:23
- * @LastEditTime: 2021-01-05 14:56:44
+ * @LastEditTime: 2021-01-05 22:11:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \bigevent\assets\js\login.js
@@ -85,12 +85,16 @@ $('#regisform').on('submit',function(e){
             url:'/api/login',
             data,
             success:function(res){
-                console.log(res);
+                // console.log(res);
                 if (res.status !==0) {
                     return layer.msg('账号密码错误，请重新输入');
                 }
-                layer.msg('注册成功', function(){
+                
+                localStorage.setItem('token',res.token)
+
+                layer.msg('登录成功', function(){
                 //do something
+                
                     location.href='/home/index.html'
                 });
             }
