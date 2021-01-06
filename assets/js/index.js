@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-05 18:19:25
- * @LastEditTime: 2021-01-05 23:05:48
+ * @LastEditTime: 2021-01-06 16:48:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \bigevent\assets\js\index.js
@@ -14,7 +14,7 @@ function getUserInfo(){
     $.ajax({
         url:'/my/userinfo',
         success:function(res){
-            console.log(res.data);
+            // console.log(res.data);
 
             if (res.status !==0) {
                 return layer.msg('获取信息失败！')
