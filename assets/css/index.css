@@ -34,3 +34,6 @@ iframe {
 .layui-nav-img {
   display: none;
 }
+.layui-footer {
+  text-align: center;
+}

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-06 00:01:31
- * @LastEditTime: 2021-01-06 14:28:57
+ * @LastEditTime: 2021-01-06 19:36:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \bigevent\assets\js\user\user.js
@@ -29,7 +29,7 @@ form.verify({
 $.ajax({
     url:'/my/userinfo',
     success:function(res){
-        console.log(res);
+        // console.log(res);
         //给表单赋值
         // form.val("formTest", { //formTest 即 class="layui-form" 所在元素属性 lay-filter="" 对应的值
         form.val("form", res.data);
