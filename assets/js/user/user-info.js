@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-06 00:01:31
- * @LastEditTime: 2021-01-06 00:41:55
+ * @LastEditTime: 2021-01-06 14:28:57
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \bigevent\assets\js\user\user.js
@@ -11,15 +11,15 @@
 let form=layui.form
 form.verify({
     nickname: function(value){ //value：表单的值、item：表单的DOM对象
-      if(!new RegExp("^[a-zA-Z0-9_\u4e00-\u9fa5\\s·]+$").test(value)){
-        return '用户名不能有特殊字符';
-      }
-      if(/(^\_)|(\__)|(\_+$)/.test(value)){
-        return '用户名首尾不能出现下划线\'_\'';
-      }
-      if(/^\d+\d+\d$/.test(value)){
-        return '用户名不能全为数字';
-      }
+      // if(!new RegExp("^[a-zA-Z0-9_\u4e00-\u9fa5\\s·]+$").test(value)){
+      //   return '用户名不能有特殊字符';
+      // }
+      // if(/(^\_)|(\__)|(\_+$)/.test(value)){
+      //   return '用户名首尾不能出现下划线\'_\'';
+      // }
+      // if(/^\d+\d+\d$/.test(value)){
+      //   return '用户名不能全为数字';
+      // }
       if (value.length>6) {
           return '请输入1~6个字符'
       }
